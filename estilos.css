@@ -1,0 +1,267 @@
+/*Este es un comentario en CSS*/
+#contenedor{
+    border:5px solid black;   /* Colocamos un borde que indica los limites del todo el contenedor*/
+}
+
+
+#cabecera{   
+
+    background-color:#BDEDFA; /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: center;
+}
+
+#imglogo{
+
+width: 180px;
+height: auto;
+float: left;
+
+}
+
+
+.izquierdo {
+	float:left; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:15%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:25px; /* Relleno */
+	background-color:#FABDD9; /*color morado con opacidad hsla*/
+
+
+    height: 100%;/* altura */             /*Añadimos la altura para que se cubra todo*/
+    margin-top:7px; /*Margen superior*/
+
+
+	
+}
+
+
+.derecho {
+	float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:#BDFACA; /*color verde con opacidad hsla*/
+
+    height: 100%;/* altura */
+    margin-top:7px; /*Margen superior*/
+
+	
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+
+#scroll{
+
+    overflow: auto;
+}
+
+.cuerpo{
+
+background-color: #E3BDFA;
+padding: 30px;
+text-align: center;
+
+
+height: 100%;/* altura */
+margin-top:7px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:65%; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+overflow: auto;
+    }
+
+
+
+ @media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	  .izquierdo, .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+        height: auto;
+        
+        
+	  }   
+    .img{
+
+        width:100%;
+        max-width:400px;
+    }
+     
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    table{
+
+        width:100%;
+        max-width:400px;
+    }
+
+}
+    
+	
+
+
+  
+
+.pie{
+background-color: #FAF7BD;
+text-align: center;
+padding: 40px;  
+}
+
+body{
+    background-color:indianred;
+    /*background-image: url("imagenes/fondo.jpg");*/
+}
+
+
+h1, h2, h3, h4{
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-decoration: underline indianred;
+    color: black;
+    font-weight:lighter;
+
+}
+
+
+p{
+  font-size: 25;
+  font-family: cursive;
+  text-align:justify;
+}
+
+a{
+    color: purple;
+    font-family: cursive;
+    font-weight:lighter;
+}
+
+
+.img{
+    display:block; /*display=elemento es bloque o linea. */
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+.class1 {
+    
+    width:640px;
+     height:480px;
+}
+
+
+.class2 {
+    
+    width:640px;
+     height:480px;
+}
+
+.class3{
+
+     
+    width:640px;
+     height:480px;
+}
+
+
+.class4{
+
+     
+    width:200px;
+     height:200 px;
+}
+
+.class5{
+
+     
+    width:640px;
+     height:720px;
+ }
+
+.class6{
+
+     
+    width:80px;
+     height:50px;
+     float: right;
+ }
+
+ .class7{
+
+     
+    width:720px;
+     height:500px;
+}
+
+.class8{
+
+     
+    width:720px;
+     height:520px;
+}
+
+.class9{
+
+     
+    width:520px;
+     height:520px;
+}
+
+video{
+    width:640;
+     height:480;
+     margin-left:auto;
+     margin-right: auto;
+     display: block;
+     
+}
+
+table, td, th {  /* estilo a la tabla creada en index.html*/
+    border: 4px solid black; /*Bordes  con un grosor de 7px, con un color solido azul*/
+    width:550;
+    height:120;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+
+
+.izquierdo a {
+    background-color:hsla(0.70turn,100%,30%,0.5);  /*Color en link de menú - Matiz (colores) Saturación(grises) y luminosidad(negro y blanco) */ 
+    padding:7px; /*Relleno del link que da efecto de botones */
+    margin-top:7px; /* Margen entre un link  y otro*/
+    display:block; /*Pantalla valor de bloque Un elemento block siempre tiene algo de espacio por encima y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado*/
+    width:100%; /* anchura en relleno de los link*/
+    color:white; /* Color del link*/
+    font-weight: lighter;/*peso o grueso de la letra*/
+    text-align:center; /*alinear el texto al centro*/
+    text-decoration:none; /* sin la linea que caracteriza un enlace*/
+}
+
+
+.izquierdo a:hover{ /*Efecto hover para menus al seleccionar  - efecto hover es la alteración del aspecto de un componente*/
+    background-color:hsla(0.10turn,100%,30%,0.2);  /* El efecto hover hace que al seleccionar con el puntero 
+    cualquiera de los link, se torne de otro color al establecido en el relleno*/
+    }
